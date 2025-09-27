@@ -57,7 +57,17 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} dylgja.no. Bygd med Docusaurus.`,
+        copyright: `
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <a href="https://skvip.lol/@markus" target="_blank" rel="me">
+            <img 
+              src="https://joinmastodon.org/logos/logo-white.svg" 
+              alt="Mastodon logo" 
+              class="footer-mastodon-logo"
+            />
+          </a>
+        </div>
+      `,
       },
       prism: {
         theme: prismThemes.github,
