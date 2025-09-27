@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'dylgja',
   tagline: 'Leskande litteratur',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://dylgja.no',
@@ -54,6 +54,10 @@ const config = {
     ({
       navbar: {
         title: 'Dylgja.no',
+        logo: {
+          alt: 'Dylgja Logo',
+          src: 'favicon/favicon.ico', // Path to your favicon
+        },
       },
       footer: {
         style: 'dark',
