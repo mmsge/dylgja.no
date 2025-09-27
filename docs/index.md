@@ -7,9 +7,9 @@ title: Velkomen
 Her på Dylgja kan kan du finne skriveriar om litteratur og liknande emnar. 
 
 ## Kvifor Dylgja?
-Dylgja er plassen kor Asle, hovudfiguren i [Jon Fosse](../litteratur/skribentar/jon-fosse.md)s [Septologien](../litteratur/bøker/septologien.md), bur. 
+Dylgja er plassen kor Asle, hovudfiguren i [Jon Fosse](litteratur/skribentar/jon-fosse)s [Septologien](litteratur/bøker/septologien), bur. 
 
-[Jon Fosse](../litteratur/skribentar/jon-fosse.md)
+[Jon Fosse](litteratur/skribentar/jon-fosse)
 
 Uttaling:<br />
 /ˈdʏːl.jɑ/ •
