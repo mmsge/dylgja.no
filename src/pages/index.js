@@ -1,26 +1,22 @@
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import Heading from '@theme/Heading';
-import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className="hero hero--primary">
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Kom i gang - 5min ⏱️
+            Kom i gang
           </Link>
         </div>
       </div>
@@ -32,12 +28,9 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Velkommen til ${siteConfig.title}`}
-      description="Dokumentasjon og innhald for dylgja.no">
+      title={siteConfig.title}
+      description="Dokumentasjon og innhald">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
