@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'dylgja.no',
-  tagline: 'Dokumentasjon og innhald',
+  title: 'dylgja',
+  tagline: 'Leskande litteratur',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -36,12 +36,15 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: false, // Disable blog functionality
+        blog: {
+          showReadingTime: true,
+        } ,
         theme: {
           customCss: './src/css/custom.css',
-        },
+        }
       }),
     ],
   ],
@@ -50,20 +53,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'dylgja.no',
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Dokumentasjon',
-          },
-          {
-            href: 'https://github.com/markus-ap/dylgja.no',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        title: 'Dylgja.no',
       },
       footer: {
         style: 'dark',
@@ -73,6 +63,11 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      docs: {
+        sidebar:{
+          hideable: true,
+        }
+      }
     }),
 };
 
