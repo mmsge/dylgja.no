@@ -2,6 +2,7 @@
 sidebar_label: Bokskisse
 title: Skisse for boka
 description: Dette er ikkje faktisk ein del av boka, men skissa for korleis den skal vera stykka opp.
+image: bilete/framside.HEIC
 ---
 
 <head>
